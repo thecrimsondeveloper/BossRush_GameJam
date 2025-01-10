@@ -10,6 +10,7 @@ public class GridPointHandler : MonoBehaviour
     public Transform playerTransform; // The player transform to center the grid around
     public float cellSize = 1f; // Size of each grid cell
     public float updateThreshold = 0.5f; // Distance threshold to update the grid
+    public int gridSize = 11; // Size of the grid (must be an odd number)
 
     private Vector3 lastPlayerPosition;
     private HashSet<Vector3Int> populatedPoints = new HashSet<Vector3Int>(); // Tracks populated grid points
@@ -65,13 +66,14 @@ public class GridPointHandler : MonoBehaviour
         // Temporary set for new grid points
         HashSet<Vector3Int> newGridPoints = new HashSet<Vector3Int>();
 
-        // Generate an 11x11 grid around the player with an offset of -6
+        // Generate a grid around the player with an adjustable size
         Vector3 centerPosition = playerTransform.position;
         Vector3Int roundedCenter = Vector3Int.RoundToInt(centerPosition / cellSize);
+        int halfGridSize = gridSize / 2;
 
-        for (int x = -5; x <= 5; x++)
+        for (int x = -halfGridSize; x <= halfGridSize; x++)
         {
-            for (int y = -5; y <= 5; y++)
+            for (int y = -halfGridSize; y <= halfGridSize; y++)
             {
                 Vector3Int gridPointPosition = new Vector3Int(
                     roundedCenter.x + x,
