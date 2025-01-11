@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7352270928844248356}
   - component: {fileID: 2183679461541563004}
   - component: {fileID: 6903281749825797431}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Repulsor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   repulsorForce: 500
   pullEffect: {fileID: 7352270928844248356}
+  audioClip: {fileID: 8300000, guid: 0f6da038eb9fc42e589fe1f71ca824ae, type: 3}
 --- !u!2083052967 &7352270928844248356
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -163,7 +164,7 @@ GameObject:
   - component: {fileID: 2634508191427498654}
   - component: {fileID: 365892370719790411}
   - component: {fileID: 8622328271374624232}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

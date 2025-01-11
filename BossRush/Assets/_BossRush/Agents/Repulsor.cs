@@ -6,6 +6,7 @@ public class Repulsor : MonoBehaviour
 {
     public float repulsorForce = 200f;
     public VisualEffect pullEffect;
+    public AudioClip audioClip;
 
 
     void OnTriggerEnter(Collider other)
@@ -18,6 +19,10 @@ public class Repulsor : MonoBehaviour
             playerMovement.Push(repulsorDirection * repulsorForce);
 
             pullEffect.Play();
+            if (audioClip != null)
+            {
+                AudioSource.PlayClipAtPoint(audioClip, transform.position);
+            }
         }
     }
 }

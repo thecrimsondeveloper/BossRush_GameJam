@@ -5,7 +5,6 @@ public class LaserRifle : Weapon
 {
     public LayerMask shootableLayer;
     public Transform firePoint;
-    public Animation fireAnimation;
     public VisualEffect bullet;
 
 
