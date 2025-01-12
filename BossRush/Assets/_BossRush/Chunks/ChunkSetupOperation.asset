@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ChunkSetupOperation
   m_EditorClassIdentifier: 
   ObjectToSpawn: {fileID: 2173705185539031911, guid: f99788194cab52e428a803dd58929e4f, type: 3}
-  AmountToSpawn: 100
+  amountToSpawn: 100

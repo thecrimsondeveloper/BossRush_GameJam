@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 913f5cd03267a304aa9431154f1b4ccc, type: 3}
   m_Name: ChunkDefinition
   m_EditorClassIdentifier: 
+  setupOperations:
+  - {fileID: 11400000, guid: fefec9f076fd0494d9da9fc6adcbda6d, type: 2}
