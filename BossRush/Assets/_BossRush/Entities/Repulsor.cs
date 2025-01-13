@@ -2,14 +2,14 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class Repulsor : MonoBehaviour
+public class Repulsor : LevelEntity, ILevelInteractor
 {
     public float repulsorForce = 200f;
     public VisualEffect pullEffect;
     public AudioClip audioClip;
 
 
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         Debug.Log("Triggered");
         if (other.TryGetComponent(out PlayerMovement playerMovement))

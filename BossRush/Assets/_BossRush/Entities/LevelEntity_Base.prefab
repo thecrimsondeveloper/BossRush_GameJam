@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101911119415635951}
   m_Layer: 0
-  m_Name: Agent_Base
+  m_Name: LevelEntity_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

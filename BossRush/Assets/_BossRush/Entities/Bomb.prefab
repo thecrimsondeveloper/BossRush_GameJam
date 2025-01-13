@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1374a426cb7be49881c2c5e716bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repulsorForce: 500
+  repulsorForce: 1000
   damage: 3
   explodeEffect: {fileID: 5711378650177989345}
   audioClip: {fileID: 8300000, guid: d5467291f1f8f401c8d8965348b2ab51, type: 3}
