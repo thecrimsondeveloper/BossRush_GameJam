@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 913f5cd03267a304aa9431154f1b4ccc, type: 3}
-  m_Name: ChunkDefinition
+  m_Name: RandomBombAndRepulsorChunk
   m_EditorClassIdentifier: 
   setupOperations:
-  - {fileID: 11400000, guid: fefec9f076fd0494d9da9fc6adcbda6d, type: 2}
+  - {fileID: 11400000, guid: f153671be8903f141adcf9ff5bb7c87f, type: 2}
+  - {fileID: 11400000, guid: f53dce053d3278946917af3baa87c66b, type: 2}
