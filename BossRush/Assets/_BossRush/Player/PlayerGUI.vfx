@@ -904,7 +904,7 @@ MonoBehaviour:
   useAlphaClipping: 0
   generateMotionVector: 0
   excludeFromTUAndAA: 0
-  sortingPriority: 0
+  sortingPriority: 5
   m_SubOutputs:
   - {fileID: 8926484042661614905}
   colorMapping: 0
