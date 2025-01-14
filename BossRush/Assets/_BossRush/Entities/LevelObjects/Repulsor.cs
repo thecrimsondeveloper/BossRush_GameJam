@@ -25,4 +25,9 @@ public class Repulsor : LevelEntity, ILevelInteractor
             }
         }
     }
+
+    public void OnTriggerExit(Collider other)
+    {
+        
+    }
 }

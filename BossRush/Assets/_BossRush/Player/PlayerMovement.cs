@@ -43,4 +43,10 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody.AddForce(force, ForceMode.Force);
     }
+
+    public void PushTowards(Vector3 targetPosition, float force)
+    {
+        Vector3 forceDirection = targetPosition - transform.position;
+        rigidbody.AddForce(forceDirection.normalized * force, ForceMode.Force);
+    }
 }
